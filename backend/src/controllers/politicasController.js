@@ -28,5 +28,16 @@ module.exports = {
         } catch (error) {
             console.log(error)
         }
+    },
+
+    async updatePolitica(req, res) {
+        let {id} = req.params
+
+        try {
+            let resp = await connection("politicas").where('id', id).update(req.body)
+            res.send(resp)
+        } catch (error) {
+            console.log(error)
+        }
     }
 }
