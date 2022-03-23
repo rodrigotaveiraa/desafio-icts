@@ -8,6 +8,7 @@ const politicas = require('./controllers/politicasController')
 const multerConfig = multer()
 
 routes.post('/produtos', multerConfig.single('file'), products.dumpProducts)
+routes.get('/produtos', products.listProducts)
 
 routes.post('/politicas', politicas.createPoliticas)
 routes.get('/politicas', politicas.listPoliticas)

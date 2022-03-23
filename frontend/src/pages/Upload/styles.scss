@@ -1,0 +1,35 @@
+p {
+    color: #a5a0a0;
+    font-weight: bold;
+}
+
+.container-upload {
+    margin-bottom: 2rem;
+    height: 10rem;
+    width: 18rem;
+    border: 1px dashed #4c8eaf;
+    background: #e0ecf2;
+    border-radius: 2px;
+    
+    position: relative;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        text-align: center;
+        p {
+            color: #4c8eaf
+        }
+    }
+
+    input {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

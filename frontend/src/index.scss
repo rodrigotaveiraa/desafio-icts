@@ -1,0 +1,17 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul: #376073;
+  --azul-claro: #879fab;
+}
+
+.container {
+  h1 {
+    font-size: 1.8rem;
+    color: var(--azul-claro);
+  }
+}

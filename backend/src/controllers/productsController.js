@@ -40,6 +40,16 @@ module.exports = {
             await connection('volumes').insert(volumeItem)
         }
         res.json(volumesObj)
-    }
+    },
+
+    async listProducts(req, res) {
+        try {
+            let resp = await connection("volumes").select('*')
+            res.send(resp)
+        } catch (error) {
+            console.log(error)
+        }
+    },
+
 
 }

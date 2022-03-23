@@ -23,7 +23,7 @@ module.exports = {
         let {id} = req.params
 
         try {
-            let resp = await connection("politicas").select('*').where('id', id)
+            let resp = await connection("politicas").select('*').where('id', id).first()
             res.send(resp)
         } catch (error) {
             console.log(error)
